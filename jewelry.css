@@ -1,0 +1,193 @@
+body {
+    background-color: #E8E2DB;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+  
+  
+.content {
+    max-width: 1200px;
+}
+
+.top_logo {
+    width: 100px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.brand_care {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.brand_care a {
+    text-decoration: none;
+}
+.jewelry {  
+    color: #333;
+    letter-spacing: 0.16em;
+}
+.brand,.contact {
+    color: #999;
+    font-weight: lighter;
+    letter-spacing: 0.16em;
+}
+.top_img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 924px;
+    display: flex;
+}
+.bgc {
+    background-color: #F8F6F4;
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.explain {
+    width: 925px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.left_line {
+    border-left: #b3b3b3 solid 3px;
+    
+}
+.logo_concept {
+    line-height: 36px;
+    text-align: center;
+    border-bottom: #b2b2b2 solid 1px;
+    padding-bottom: 80px;
+}
+.explain a {
+    color: #707070;
+    
+}
+.ex_top {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 80px;
+}
+.ex {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-left: #b2b2b2 solid 3px;
+    padding-left: 20px;
+}
+
+
+
+/*----footer----*/
+
+
+.sns {
+    margin-left: 20px;
+   
+}
+.sns img {
+    margin-right: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    border-radius: 6px;
+}
+.insta {
+    width: 30px;
+}
+.twitter {
+    width: 31px;
+}
+footer p {
+    color: #290909;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.contact_faq_address_copy {
+  padding-bottom: 0;
+  display: flex;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}
+.contact_faq_address,.copy {
+  display: flex;
+}
+.copy {
+  right: 0;
+  display: flex;
+  margin-right: 20px;
+}    
+/*----footer----*/
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+.body {
+  max-width: 959px;
+}
+
+.content {
+  max-width: 959px;
+}
+
+.brand_care {
+    max-width: 959px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.top_img {
+    max-width: 959px;
+    width: 80%;
+}
+
+
+
+.bgc {
+    max-width: 959px;
+    width: 100%;
+}
+.explain {
+    max-width: 959px;
+    width: 80%;
+}
+footer {
+  max-width: 959px;
+}
+
+}
+
+
+@media screen and (max-width: 480px) {
+h2 {
+    font-size: 20px;
+}
+.ex_top {
+    font-size: 18px;
+}
+.ex {
+    border-left: none;
+    padding-left: 0px;
+}
+}
