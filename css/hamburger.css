@@ -1,0 +1,141 @@
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+	top:0;
+    right: -120%;
+	width:20%;
+    height: 100vh;/*ナビの高さ*/
+	background:#999;
+    /*動き*/
+	transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    right: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin:0 auto;
+    margin-top: 30px;
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+	list-style: none;
+    display: flex;
+    margin-top: 10%;
+}
+
+#g-nav li a{
+	color: #333;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.nav_img img {
+    height: 100vh;
+    filter: blur(2px);
+    filter: opacity(40%);
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+	position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+	top: 45px;
+	right: 70px;
+	cursor: pointer;
+}
+	
+/*×に変化*/	
+
+.openbtn:active{
+	box-shadow: none;
+	margin-top: 2px;
+	height: 78px;
+	transition: none;
+}
+.cart_img img:active {
+	margin-top: 2px;
+	height: 70px;
+	transition: none;
+}
+.login:active {
+	margin-top: 2px;
+	height: 30px;
+	transition: none;
+}
+
+
+
+
+@media screen and (max-width: 1700px) {
+
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+	width:30%;
+}
+
+
+/*ナビゲーションの縦スクロール*/
+
+
+}
+
+
+@media screen and (max-width: 959px) {
+
+
+    #g-nav{
+        /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+        width:40%;
+    }
+    
+    
+    /*ナビゲーションの縦スクロール*/
+    #g-nav.panelactive #g-nav-list{
+        width: 100%;
+    }
+    
+    }
+
+
+
+
+@media screen and (max-width: 480px) {
+
+.openbtn {
+    right: 20px;
+}
+
+#g-nav ul {
+    left: 30%;
+}
+#g-nav li a {
+    font-size: 26px;
+}
+}
