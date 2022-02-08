@@ -631,7 +631,7 @@ a.view_more {
 
 
 .neck_img_1 {
-    margin: auto;
+    margin-right: auto;
 
     background-color: #d6c9ba;
     max-width: 660px;
@@ -652,6 +652,7 @@ a.view_more {
     flex-wrap: wrap;
     align-content: center;
     max-width: 1200px;
+    padding-right: 80px;
 }
 .title_center {
     justify-content: flex-end;
@@ -1137,7 +1138,13 @@ h2 {
     max-width: 959px;
 }
 
+.neck_img_1 {
+    margin: auto;
+}
 
+.text_center {
+    padding-right: 0;
+}
 .view_text_type2 {
     max-width: 959px;
     margin: 0 auto;
@@ -1159,6 +1166,7 @@ h2 {
     margin: 0 auto;
     margin-top: 50px;
 }
+
 .img_text {
     flex-direction: column;
     align-items: center;
